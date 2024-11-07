@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    height: auto;
+    position: relative;
+    background-color: rgb(44, 57, 39);
+}
+
+.details-foods{
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(to right blue,black,#a62f2f);
+}
+
+.details-foods .title{
+    width: 100%;
+    margin: 30px 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.details-foods .title h1{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    width: 40%;
+}
+
+.details-foods .foods{
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.details-foods .foods .card{
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(22, 21, 21);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details-foods .foods:hover .card{
+    scale: 1.1;
+    transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.details-foods .foods:hover .card:not(:hover){
+    opacity: 0.2;
+    backdrop-filter: blur(10px);
+    scale: 1;
+}
+.details-foods .foods .card img{
+    width: 70%;
+    margin: 0 15%;
+}
+
+.details-foods .foods .card .discription{
+    color: white;
+    margin:0 10px;
+}
+.details-foods .foods .card .discription h1{
+    
+    font-family: 'Patua One', serif;
+    letter-spacing: 1px;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.details-foods .foods .card .discription p{
+    float: left;
+    margin-left: 2px;
+}
+.details-foods .foods .card .discription .price{
+    float: right;
+    font-family: 'Lemon', serif;
+    margin:10px 20px 10px 0;
+}
+
+
+    </style>
+</head>
+<body>
+    <section class="details-foods">
+        <div class="title"><h1 data-aos="fade-left" data-aos-duration="1000" >We offer a wide variety of Buck’s teas, each with its own unique and delightful flavor!</h1></div>
+        <div class="foods">
+            <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                <img src="cup5.png" alt="">
+                <div class="discription">
+                    <h1>MILKSHAKE</h1>
+                    <p>A milkshake is a creamy, sweet beverage made with milk, ice cream, and flavorings like fruit or chocolate. It's a delicious treat that can be customized to your taste.</p>
+                    <p class="price">Rs 129</p>
+                    
+                    <br><hr>
+                    <button href="Index.html">Add to cart</button>
+                    
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <img src="cup4.png" alt="">
+                <div class="discription">
+                    <h1>COLD COFFEE</h1>
+                    <p>Cold and iced coffee are perfect refreshing drinks for a caffeine boost, especially on warm days.</p>
+                    <p class="price">Rs 81</p>
+                    <br><hr>
+                    <button href="Index.html">Add to cart</button>
+                    
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <img src="cup7.png" alt="">
+                <div class="discription">
+                    <h1>artisan latte cup</h1>
+                    <p>A latte is a coffee drink made with espresso and steamed milk.</p>
+                    <p class="price">Rs 250</p>
+                    <br><hr>
+                    <button href="Index.html">Add to cart</button>
+                    
+    
+                </div>
+            </div>
+           
+        </div>
+    </section>
+</body>
+</html>
